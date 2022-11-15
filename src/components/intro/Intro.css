@@ -1,0 +1,33 @@
+
+.main {
+  display: flex;
+  height: 100vh;
+  /* background-color: red; */
+}
+
+.main-left { 
+  /* 50% of the component is on the left side */
+  flex: 1;
+  padding: 50px;
+  /* background-color: blue; */
+}
+
+.main-right {
+  /* 50% of the component is on the right side */
+  flex: 1;
+  /* background-color: green; */
+}
+
+.main-intro {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.main-name {
+  font-size: 50px;
+}
+
+.main-title {
+  height: 50px;
+  overflow: hidden;
+}
