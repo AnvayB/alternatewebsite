@@ -1,5 +1,6 @@
 import React from 'react'
 import './Intro.css'
+import me from '../../img/face.png'
 
 const Intro = () => {
   return (
@@ -19,11 +20,13 @@ const Intro = () => {
                   <div className="main-title-item">Content Creator</div>
                 </div>
               </div>
-
+              <div className="main-desc">
+                I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services, and online stores.
+              </div>
             </div>
         </div>
-      <div className="main-right">right
-      
+      <div className="main-right">
+        <img src={me} alt="" className="main-img"/>
       </div>
     </div>
   ) 

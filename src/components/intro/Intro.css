@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 
 .main {
   display: flex;
@@ -8,26 +11,69 @@
 .main-left { 
   /* 50% of the component is on the left side */
   flex: 1;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.main-left-wrapper {
   padding: 50px;
-  /* background-color: blue; */
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-right {
   /* 50% of the component is on the right side */
   flex: 1;
-  /* background-color: green; */
+  background-color: green;
+}
+
+.main-img {
+  height: 100%;
+  position: relative;
+  left: 2%;
 }
 
 .main-intro {
   font-size: 30px;
   font-weight: 300;
+  margin: 0;
 }
 
 .main-name {
   font-size: 50px;
+  margin: 0;
 }
 
 .main-title {
   height: 50px;
   overflow: hidden;
+  margin: 0;
 }
+
+.main-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+/* cycles through all `main-title-item`s for a total of 10s (aka 2s on each item) */
+@keyframes move {
+  25%{
+    transform: translateY(-50px);
+  }
+  50%{transform: translateY(-100px);}
+  75%{transform: translateY(-150px);}
+  100%{transform: translateY(-200px);}
+}
+
+.main-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+  display: flex;
+  align-items: center;
+}
+
