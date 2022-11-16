@@ -18,7 +18,7 @@
 
 .main-left-wrapper {
   padding: 50px;
-  height: 50%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,13 +27,25 @@
 .main-right {
   /* 50% of the component is on the right side */
   flex: 1;
+  /* background-color: green; */
+  position: relative;
+}
+
+.main-bg {
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   background-color: green;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .main-img {
   height: 100%;
   position: relative;
   left: 2%;
+  object-fit: cover;
 }
 
 .main-intro {
